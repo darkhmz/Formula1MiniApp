@@ -18,11 +18,11 @@
 
     <dimen name="text_small">18sp</dimen>
     <dimen name="text_medium">20sp</dimen>
-    <dimen name="text_large">24sp</dimen>
+    <dimen name="text_large">22sp</dimen>
     <dimen name="text_seasonlist">40sp</dimen>
 
-    <item name="weight_driverinfo_left" format="float" type="dimen">0.6</item>
-    <item name="weight_driverinfo_right" format="float" type="dimen">0.4</item>
+    <item name="weight_driverinfo_left" format="float" type="dimen">0.5</item>
+    <item name="weight_driverinfo_right" format="float" type="dimen">0.5</item>
 
     <item name="alpha" format="float" type="dimen">0.45</item>
 </resources>

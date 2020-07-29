@@ -95,31 +95,30 @@ class DriverActivity : AppCompatActivity() {
                     Util.buildRequest(
                     "https://www.googleapis.com/customsearch/v1?key=" + APIKey + "&cx=" + engineKey + "&searchType=image&q=" + query,
                     Response.Listener { response ->
-                        val result = JSONObject(response)
+                        try{
+                            val result = JSONObject(response)
 
-                        if (!result.isNull("items")) {
-                            Picasso.get().load(result.getJSONArray("items").getJSONObject(0).getString("link")).into(findViewById(R.id.iv_driver),
-                                object : Callback {
-                                    override fun onSuccess() {
-                                    }
+                            if (!result.isNull("items")) {
+                                Picasso.get().load(result.getJSONArray("items").getJSONObject(0).getString("link")).into(findViewById(R.id.iv_driver),
+                                    object : Callback {
+                                        override fun onSuccess() {
+                                        }
 
-                                    override fun onError(e: Exception) {
-                                        Log.d(Util.TAG_DEBUG, e.toString())
-                                        AlertDialog.Builder(context).setMessage(R.string.label_error_image).setPositiveButton(android.R.string.ok, null).create().show()
+                                        override fun onError(e: Exception) {
+                                            Log.d(Util.TAG_DEBUG, e.toString())
+                                            AlertDialog.Builder(context).setMessage(R.string.label_error_image).setPositiveButton(android.R.string.ok, null).create().show()
+                                        }
                                     }
-                                }
-                            )
+                                )
+                            }
+                        } catch (e: JSONException){
+                            Log.d(Util.TAG_DEBUG, e.toString())
+                            AlertDialog.Builder(this).setMessage(R.string.label_error_data).setPositiveButton(android.R.string.ok, null).create().show()
                         }
-
                     },
                     Response.ErrorListener {
-                        Log.d(
-                            Util.TAG_DEBUG,
-                            it.toString()
-                        )
-                        AlertDialog.Builder(context)
-                            .setMessage(R.string.label_error_image)
-                            .setPositiveButton(android.R.string.ok, null).create().show()
+                        Log.d(Util.TAG_DEBUG, it.toString())
+                        AlertDialog.Builder(context).setMessage(R.string.label_error_image).setPositiveButton(android.R.string.ok, null).create().show()
                     }
                 ))
 
