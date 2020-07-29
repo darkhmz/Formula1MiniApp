@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_drawable">6dp</dimen>
+
+    <dimen name="padding_listitem_top">16dp</dimen>
+    <dimen name="padding_listitem_bottom">16dp</dimen>
+    <dimen name="padding_listitem_start">48dp</dimen>
+    <dimen name="padding_listitem_end">48dp</dimen>
+
+    <dimen name="padding_activity_top">16dp</dimen>
+    <dimen name="padding_activity_bottom">16dp</dimen>
+    <dimen name="padding_activity_start">48dp</dimen>
+    <dimen name="padding_activity_end">48dp</dimen>
+    <dimen name="padding_activity_start_small">24dp</dimen>
+    <dimen name="padding_activity_end_small">24dp</dimen>
+
+    <dimen name="padding_divider">24dp</dimen>
+
+    <dimen name="text_small">18sp</dimen>
+    <dimen name="text_medium">20sp</dimen>
+    <dimen name="text_large">24sp</dimen>
+    <dimen name="text_seasonlist">40sp</dimen>
+
+    <item name="weight_driverinfo_left" format="float" type="dimen">0.6</item>
+    <item name="weight_driverinfo_right" format="float" type="dimen">0.4</item>
+
+    <item name="alpha" format="float" type="dimen">0.45</item>
+</resources>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/padding_activity_bottom"
+    android:paddingStart="@dimen/padding_activity_start_small"
+    android:paddingEnd="@dimen/padding_activity_end_small"
+    tools:context=".activity.DriverActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_large"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/iv_driver"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/imageBackground"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="@dimen/weight_driverinfo_left"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_large"
+                android:text="@string/label_driver_nationality"/>
+
+            <TextView
+                android:id="@+id/tv_nationality"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="@dimen/weight_driverinfo_right"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_large"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="@dimen/weight_driverinfo_left"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_large"
+                android:text="@string/label_driver_dob"/>
+
+            <TextView
+                android:id="@+id/tv_dob"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="@dimen/weight_driverinfo_right"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_large"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="@dimen/weight_driverinfo_left"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_large"
+                android:text="@string/label_driver_number"/>
+
+            <TextView
+                android:id="@+id/tv_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="@dimen/weight_driverinfo_right"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_large"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="@dimen/weight_driverinfo_left"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_large"
+                android:text="@string/label_driver_code"/>
+
+            <TextView
+                android:id="@+id/tv_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="@dimen/weight_driverinfo_right"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_large"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:src="@drawable/ic_info_black_48dp"
+        android:alpha="@dimen/alpha"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

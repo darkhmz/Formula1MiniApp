@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:paddingTop="@dimen/padding_listitem_top"
+    android:paddingBottom="@dimen/padding_listitem_bottom"
+    android:paddingStart="@dimen/padding_listitem_start"
+    android:paddingEnd="@dimen/padding_listitem_end">
+
+    <TextView
+        android:id="@+id/tv_year"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        android:textSize="@dimen/text_seasonlist"/>
+
+    <ImageView
+        android:id="@+id/iv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_info_black_48dp"
+        android:alpha="@dimen/alpha"/>
+
+</LinearLayout>

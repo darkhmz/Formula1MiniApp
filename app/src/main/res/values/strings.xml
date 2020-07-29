@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Formula 1</string>
+    <string name="header_seasons">Formula 1 szezonok (%s-%s)</string>
+    <string name="header_drivers">Formula 1 mezőny (%s)</string>
+    <string name="info_seasons">Listaelem kiválasztásakor az adott szezon versenyzőinek listáját tekintheti meg. Az info gombra nyomva a szezon Wikipedia oldala fog megnyílni a böngészőben.</string>
+    <string name="info_drivers">Listaelem kiválasztásakor az adott versenyző adatlapját tekintheti meg. Az info gombra nyomva a versenyző Wikipedia oldala fog megnyílni a böngészőben.</string>
+    <string name="label_no_number">Nincs rajtszám</string>
+    <string name="label_no_code">Nincs kód</string>
+    <string name="label_driverdata">Versenyző adatlap</string>
+    <string name="label_search">Keresés</string>
+    <string name="label_driverlist_summary">Nemzetiségek megoszlása</string>
+    <string name="label_driver_name">Név</string>
+    <string name="label_driver_nationality">Nemzetiség</string>
+    <string name="label_driver_dob">Születési dátum</string>
+    <string name="label_driver_number">Rajtszám</string>
+    <string name="label_driver_code">Kód</string>
+    <string name="drivername">%s %s</string>
+    <string name="label_error_adapter">Hiba történt a lista feltöltése közben!</string>
+    <string name="label_error_data">Hiba történt az adatok feldolgozása közben!</string>
+    <string name="label_error_image">Kép betöltése sikertelen!</string>
+</resources>

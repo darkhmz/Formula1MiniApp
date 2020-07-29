@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Az API által visszadaott adatokból (848 versenyző adatai alapján) ki lettek gyűjtve a nemzetiségek, később lehet bővíteni ha szükséges -->
+	<string-array name="countrycodes">
+		<item>IT,Italian</item>
+		<item>RU,Russian</item>
+		<item>US,American-Italian</item>
+		<item>US,American</item>
+		<item>VE,Venezuelan</item>
+		<item>CA,Canadian</item>
+		<item>DE,German</item>
+		<item>CH,Swiss</item>
+		<item>SE,Swedish</item>
+		<item>FR,French</item>
+		<item>PT,Portuguese</item>
+		<item>ID,Indonesian</item>
+		<item>LI,Liechtensteiner</item>
+		<item>NZ,New Zealander</item>
+		<item>FI,Finnish</item>
+		<item>CL,Chilean</item>
+		<item>ES,Spanish</item>
+		<item>BR,Brazilian</item>
+		<item>TH,Thai</item>
+		<item>ZA,South African</item>
+		<item>MY,Malaysian</item>
+		<item>GB,British</item>
+		<item>MX,Mexican</item>
+		<item>AT,Austrian</item>
+		<item>AR,Argentine-Italian</item>
+		<item>PL,Polish</item>
+		<item>MC,Monegasque</item>
+		<item>JP,Japanese</item>
+		<item>AR,Argentine</item>
+		<item>BE,Belgian</item>
+		<item>IE,Irish</item>
+		<item>UY,Uruguayan</item>
+		<item>AU,Australian</item>
+		<item>CO,Colombian</item>
+		<item>DK,Danish</item>
+		<item>IN,Indian</item>
+		<item>HU,Hungarian</item>
+		<item>CZ,Czech</item>
+		<item>DE,East German</item>
+		<item>NL,Dutch</item>
+		<item>ZW,Rhodesian</item>
+	</string-array>
+</resources>

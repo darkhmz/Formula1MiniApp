@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:paddingTop="@dimen/padding_listitem_top"
+    android:paddingBottom="@dimen/padding_listitem_bottom"
+    android:paddingStart="@dimen/padding_listitem_start"
+    android:paddingEnd="@dimen/padding_listitem_end">
+
+    <TextView
+        android:id="@+id/tv_nationality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_small"/>
+
+</LinearLayout>
