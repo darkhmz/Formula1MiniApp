@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.View
+import android.view.inputmethod.EditorInfo
 import android.widget.ArrayAdapter
 import android.widget.LinearLayout
 import android.widget.ListView
@@ -31,6 +32,7 @@ class DriverListActivity : AppCompatActivity() {
     lateinit var listView_drivers: ListView
     lateinit var adapter_drivers: DriverAdapter
     lateinit var sharedPref: SharedPreferences
+    lateinit var searchView: SearchView
 
     val listItems_drivers: ArrayList<Driver> = ArrayList()
     val listItems_drivers_filtered: ArrayList<Driver> = ArrayList()
@@ -73,16 +75,25 @@ class DriverListActivity : AppCompatActivity() {
         return true
     }
 
+    override fun onBackPressed() {
+        if(!searchView.isIconified){
+            filter("")
+            searchView.onActionViewCollapsed()
+            layout_summary.visibility = View.VISIBLE
+            return
+        }
+        super.onBackPressed()
+    }
+
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu, menu)
 
-        val searchView = menu.findItem(R.id.searchView).actionView as SearchView
+        searchView = menu.findItem(R.id.searchView).actionView as SearchView
         searchView.queryHint = getString(R.string.label_search)
+        searchView.imeOptions = EditorInfo.IME_ACTION_DONE
 
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
-                if(layout_summary.visibility == View.VISIBLE) layout_summary.visibility = View.GONE
-                filter(query)
                 return false
             }
             override fun onQueryTextChange(newText: String?): Boolean {
