@@ -43,6 +43,7 @@ class DriverListActivity : AppCompatActivity() {
         setContentView(R.layout.activity_driverlist)
 
         sharedPref = getSharedPreferences(applicationContext.packageName, Context.MODE_PRIVATE)
+
         Util.info_drivers = sharedPref.getBoolean("info_drivers", true)
 
         val selectedSeason = intent.extras?.getString("selectedSeason")
