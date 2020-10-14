@@ -32,9 +32,7 @@ class DriverActivity : AppCompatActivity() {
         val selectedDriver = intent.extras?.getString("selectedDriver")
 
         Volley.newRequestQueue(this).add(
-            Util.buildRequest(
-            "https://ergast.com/api/f1/drivers/" + selectedDriver + ".json",
-            Response.Listener { response ->
+            Util.buildRequest("https://ergast.com/api/f1/drivers/" + selectedDriver + ".json", Response.Listener { response ->
                 try {
                     val driver = JSONObject(response).getJSONObject("MRData").getJSONObject("DriverTable").getJSONArray("Drivers").getJSONObject(0)
                     setData(driver)
