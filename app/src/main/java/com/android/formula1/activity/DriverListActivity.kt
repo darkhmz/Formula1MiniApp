@@ -52,9 +52,7 @@ class DriverListActivity : AppCompatActivity() {
         listView_drivers = findViewById(R.id.list_drivers)
 
         Volley.newRequestQueue(this).add(
-            Util.buildRequest(
-            "https://ergast.com/api/f1/" + selectedSeason + "/drivers.json?limit=" + Util.APIlimit,
-            Response.Listener { response ->
+            Util.buildRequest("https://ergast.com/api/f1/" + selectedSeason + "/drivers.json?limit=" + Util.APIlimit, Response.Listener { response ->
                 try {
                     val drivers = JSONObject(response).getJSONObject("MRData").getJSONObject("DriverTable").getJSONArray("Drivers")
                     setAdapter(drivers)
